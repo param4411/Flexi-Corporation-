@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title">
+  <title id="title">Finished bulk bag receiving a final load and quality check</title>
+  <rect width="800" height="600" fill="#dcd4c6"/>
+  <path d="M0 458h800v142H0z" fill="#b9ad98"/>
+  <path d="M155 106h490v15H155zM178 121v304M622 121v304" stroke="#47443d" stroke-width="14"/>
+  <path d="M178 425h444" stroke="#47443d" stroke-width="14"/>
+  <path d="M369 121v58" stroke="#706653" stroke-width="8"/>
+  <path d="M334 176h70l-9 28h-52z" fill="#817663"/>
+  <path d="M344 204h50v19h-50z" fill="#a39780"/>
+  <path d="M255 216h290l-22 193H277z" fill="#c9bca5" stroke="#746a59" stroke-width="8"/>
+  <path d="M280 251h239M276 279h246M273 307h249M269 335h255M266 363h260" stroke="#eee8dd" stroke-width="7" opacity=".8"/>
+  <path d="M303 216v193M499 216v193" stroke="#8d806c" stroke-width="6" stroke-dasharray="9 8"/>
+  <path d="M309 215v-37h36v37M453 215v-37h36v37" fill="none" stroke="#746a59" stroke-width="12"/>
+  <path d="M360 151h88" stroke="#a39780" stroke-width="5"/>
+  <path d="M666 195l18 19 38-46" fill="none" stroke="#586b52" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="695" cy="200" r="48" fill="none" stroke="#586b52" stroke-width="6"/>
+  <path d="M132 472h536v16H132zM165 488h22v34h-22zM614 488h22v34h-22z" fill="#726957"/>
+  <path d="M186 439h428v31H186z" fill="#988b74"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Stack of polypropylene woven sacks</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#dce0de"/><stop offset="1" stop-color="#aab2ad"/></linearGradient>
+    <pattern id="mesh" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 3h14M0 10h14" stroke="#756e61" stroke-opacity=".34" stroke-width="2"/><path d="M3 0v14M10 0v14" stroke="#fff" stroke-opacity=".48" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 830h800v170H0z" fill="#9aa19c"/>
+  <path d="M0 875h800M0 930h800" stroke="#717971" stroke-opacity=".3" stroke-width="4"/>
+  <ellipse cx="405" cy="834" rx="274" ry="40" fill="#515650" opacity=".2"/>
+  <g stroke="#827764" stroke-width="5">
+    <path d="M190 586q5-28 35-32l294 0q30 5 38 32l22 189q2 27-28 31H183q-30-4-27-31z" fill="#c5b89f"/>
+    <path d="M166 422q5-28 35-32h304q30 5 38 32l24 174q2 27-28 31H159q-30-4-27-31z" fill="#ece6da"/>
+    <path d="M213 270q5-28 35-32h268q30 5 38 32l18 158q2 27-28 31H204q-30-4-27-31z" fill="#d9d0c0"/>
+    <path d="M241 140h286l-10 140H251z" fill="#f1ece2"/>
+  </g>
+  <g fill="url(#mesh)">
+    <path d="M190 586q5-28 35-32l294 0q30 5 38 32l22 189q2 27-28 31H183q-30-4-27-31z"/>
+    <path d="M166 422q5-28 35-32h304q30 5 38 32l24 174q2 27-28 31H159q-30-4-27-31z"/>
+    <path d="M213 270q5-28 35-32h268q30 5 38 32l18 158q2 27-28 31H204q-30-4-27-31z"/>
+    <path d="M241 140h286l-10 140H251z"/>
+  </g>
+  <path d="M178 624q181 18 384 0M151 457q186 19 412 0M200 303q168 16 353 0" fill="none" stroke="#9a8c75" stroke-width="7"/>
+  <path d="M291 493h171v67H291z" fill="#f5f1e9" opacity=".84"/>
+  <path d="M313 515h128M313 535h92" stroke="#817765" stroke-width="5"/>
+  <path d="M309 196h151" stroke="#8d826f" stroke-width="5"/>
+  <path d="M215 808h366" stroke="#6a6254" stroke-width="12"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Heavy-duty builder bag filled with sand and aggregate</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e6d8c0"/><stop offset="1" stop-color="#bba98d"/></linearGradient>
+    <linearGradient id="bag" x2="0" y2="1"><stop stop-color="#c69e61"/><stop offset="1" stop-color="#987247"/></linearGradient>
+    <pattern id="cloth" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M0 4h16M0 12h16" stroke="#594a34" stroke-opacity=".25" stroke-width="2"/><path d="M4 0v16M12 0v16" stroke="#f0d4a7" stroke-opacity=".35" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 810h800v190H0z" fill="#a38f70"/>
+  <path d="M0 862h800M0 930h800" stroke="#6f624d" stroke-opacity=".3" stroke-width="4"/>
+  <ellipse cx="403" cy="828" rx="253" ry="36" fill="#544a39" opacity=".22"/>
+  <path d="M215 258v-99q0-44 41-44h22v143M522 258v-99q0-44 41-44h22v143" fill="none" stroke="#84683f" stroke-width="30" stroke-linecap="round"/>
+  <path d="M207 248h386l-25 527q-2 43-44 43H276q-42 0-44-43z" fill="url(#bag)" stroke="#755b39" stroke-width="8"/>
+  <path d="M207 248h386l-25 527q-2 43-44 43H276q-42 0-44-43z" fill="url(#cloth)"/>
+  <path d="M215 288h371M238 741q164 49 323 0" fill="none" stroke="#eed3a5" stroke-opacity=".8" stroke-width="9"/>
+  <path d="M225 322q82-46 164 0t164 0" fill="#a58a62" stroke="#715c3d" stroke-width="6"/>
+  <path d="M240 317l35-25 38 21 34-32 38 34 39-25 38 30 36-29 43 25" fill="#8a7656"/>
+  <path d="M322 438h158v102H322z" fill="#ead9bb" opacity=".9"/>
+  <path d="M343 464h115M343 485h115M343 506h82" stroke="#76644b" stroke-width="5"/>
+  <path d="M171 871h455l-34 44H205z" fill="#6d604c"/>
+  <path d="M235 919h42v28h-42zM522 919h42v28h-42z" fill="#76664d"/>
+</svg>

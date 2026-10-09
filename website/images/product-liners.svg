@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Clear polyethylene liner fitted inside a bulk bag</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#eeeae2"/><stop offset="1" stop-color="#c8c6bf"/></linearGradient>
+    <linearGradient id="film" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".82"/><stop offset=".55" stop-color="#e7f0ef" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity=".7"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 820h800v180H0z" fill="#b0ada4"/>
+  <path d="M0 872h800M0 932h800" stroke="#817c71" stroke-opacity=".28" stroke-width="4"/>
+  <ellipse cx="402" cy="837" rx="240" ry="34" fill="#65645e" opacity=".19"/>
+  <path d="M249 260v-98q0-38 38-38h18v142M481 260v-98q0-38 38-38h18v142" fill="none" stroke="#918774" stroke-width="24" stroke-linecap="round"/>
+  <path d="M228 253h344l-14 520q-1 39-39 39H281q-38 0-39-39z" fill="#c9bda8" fill-opacity=".38" stroke="#887d69" stroke-width="6"/>
+  <path d="M252 270h296l-13 485q-1 29-29 29H295q-28 0-29-29z" fill="url(#film)" stroke="#a9b7b4" stroke-width="5"/>
+  <path d="M252 270l28 16v469M548 270l-30 16v469" fill="none" stroke="#fff" stroke-width="7" opacity=".82"/>
+  <path d="M256 292q139 33 291 0" fill="none" stroke="#9fb0ad" stroke-width="6"/>
+  <path d="M293 366q86 37 205 0v104q-102 36-205 0z" fill="#f7faf8" fill-opacity=".48"/>
+  <path d="M306 393q74 28 179 0" fill="none" stroke="#fff" stroke-width="7" opacity=".9"/>
+  <path d="M287 535v193M519 535v193" stroke="#fff" stroke-width="4" opacity=".65"/>
+  <path d="M267 784h266" stroke="#eef3f0" stroke-width="7"/>
+  <path d="M178 876h444l-28 38H206z" fill="#777163"/>
+  <circle cx="602" cy="310" r="34" fill="#f7f4ed" opacity=".8"/>
+  <path d="M584 310h36M602 292v36" stroke="#91a09d" stroke-width="4" opacity=".7"/>
+</svg>

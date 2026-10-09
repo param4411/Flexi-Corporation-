@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title">
+  <title id="title">Reinforced bulk bag panel being stitched</title>
+  <rect width="800" height="600" fill="#e5ded1"/>
+  <path d="M0 450h800v150H0z" fill="#b7aa94"/>
+  <path d="M184 134h390l-35 309H220z" fill="#c8bba4" stroke="#756a59" stroke-width="8"/>
+  <path d="M222 170h314M217 196h320M213 222h325" stroke="#eee8dd" stroke-width="8" opacity=".85"/>
+  <path d="M246 134v310M512 134v310" stroke="#8b7e69" stroke-width="7" stroke-dasharray="10 9"/>
+  <path d="M287 133V90q0-27 27-27h40q25 0 25 27v43M421 133V90q0-27 27-27h40q25 0 25 27v43" fill="none" stroke="#776c59" stroke-width="15"/>
+  <path d="M61 450h675v25H61z" fill="#5b554b"/>
+  <path d="M450 282h201v20H450z" fill="#34322e"/>
+  <path d="M523 302h104l28 84H480z" fill="#514b41"/>
+  <path d="M479 385h204v20H479z" fill="#756b5b"/>
+  <path d="M515 405l-22 45M640 405l23 45" stroke="#34322e" stroke-width="12"/>
+  <circle cx="342" cy="385" r="40" fill="#9b8d75"/>
+  <path d="M342 350l-20 34h39z" fill="#f6f3ee"/>
+  <path d="M330 389h24M334 398h16" stroke="#f6f3ee" stroke-width="4"/>
+  <path d="M589 272l-26 18" stroke="#d6ccbb" stroke-width="4" stroke-dasharray="5 6"/>
+</svg>

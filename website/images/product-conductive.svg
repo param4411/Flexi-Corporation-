@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Conductive bulk bag with grounding tag and conductive yarn pattern</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#d5d8d7"/><stop offset="1" stop-color="#a4aba9"/></linearGradient>
+    <linearGradient id="bag" x2="0" y2="1"><stop stop-color="#929893"/><stop offset="1" stop-color="#606964"/></linearGradient>
+    <pattern id="conductive" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M0 0l28 28M28 0L0 28" stroke="#d3d6d2" stroke-opacity=".28" stroke-width="2"/><circle cx="14" cy="14" r="2" fill="#363e3c" fill-opacity=".35"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 815h800v185H0z" fill="#929995"/>
+  <path d="M0 863h800M0 925h800" stroke="#616964" stroke-opacity=".27" stroke-width="4"/>
+  <ellipse cx="399" cy="826" rx="235" ry="36" fill="#333b38" opacity=".2"/>
+  <path d="M255 268v-88q0-41 40-41h23v129M480 268v-88q0-41 40-41h23v129" fill="none" stroke="#59615d" stroke-width="27" stroke-linecap="round"/>
+  <path d="M235 255h330l-17 521q-2 38-40 38H292q-38 0-40-38z" fill="url(#bag)" stroke="#444c49" stroke-width="7"/>
+  <path d="M235 255h330l-17 521q-2 38-40 38H292q-38 0-40-38z" fill="url(#conductive)"/>
+  <path d="M241 291h318M254 752q144 41 279 0" fill="none" stroke="#d3d6d2" stroke-opacity=".75" stroke-width="6"/>
+  <path d="M298 403h200v152H298z" fill="#c6cbc6" opacity=".92"/>
+  <path d="M323 430h148M323 453h148" stroke="#53605b" stroke-width="5"/>
+  <circle cx="398" cy="497" r="25" fill="none" stroke="#53605b" stroke-width="5"/>
+  <path d="M398 478v22l15 10" fill="none" stroke="#53605b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M554 374h68v106h-68z" fill="#e9e5dc" stroke="#65706b" stroke-width="4"/>
+  <path d="M571 401h34M571 418h34M571 435h23" stroke="#65706b" stroke-width="4"/>
+  <path d="M577 481v77l21 26 20-26v-77" fill="#747d77" stroke="#414946" stroke-width="5"/>
+  <path d="M184 866h432l-31 43H215z" fill="#59615b"/>
+</svg>

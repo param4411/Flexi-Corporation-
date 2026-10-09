@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Felix Admin – Quotes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--cream:#f6f3ee;--stone:#ebe5da;--sand:#d6ccbb;--taupe:#7a7064;--line:#d9d2c5;--bg:#f4efe9;--panel:#fffdf8;--shadow:rgba(17,17,17,.08);--accent:#1f1d1b;--success:#1e6b4d;--warn:#9b6b1a;--danger:#9a2d2d;--blue:#1b365c}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:300 16px/1.75 'Jost',system-ui,sans-serif;background:var(--bg);color:var(--ink);letter-spacing:.01em}
+.hide{display:none!important}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+#login{min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#f0e9df,#d8cdb9 44%,#efe6d7);position:relative;overflow:hidden}
+#login::before,#login::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 12px,rgba(122,112,100,.08) 12px 13px),repeating-linear-gradient(90deg,transparent 0 12px,rgba(122,112,100,.08) 12px 13px);opacity:.55}
+#login form{position:relative;z-index:1;background:rgba(255,255,255,.82);backdrop-filter:blur(3px);padding:34px 30px 28px;border:1px solid rgba(122,112,100,.25);box-shadow:0 24px 60px rgba(17,17,17,.12);width:min(92vw,420px);display:grid;gap:14px;border-radius:16px}
+#login h1{color:var(--ink);font-size:28px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px;text-align:center;font-weight:500}
+#login .logo{font-family:'Cormorant Garamond',serif;font-size:48px;letter-spacing:8px;text-align:center;margin-bottom:6px}
+#login label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--taupe)}
+#login input{background:transparent;border:0;border-bottom:1px solid var(--taupe);padding:10px 0 8px;color:var(--ink);width:100%;outline:none;transition:border-color .2s ease}
+#login input:focus{border-color:var(--ink)}
+#login .pw-wrap{position:relative}
+#login .pw-wrap input{padding-right:52px}
+#login .toggle-pw{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:28px;height:28px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.55);color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;line-height:1}
+#login .toggle-pw svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#err{color:var(--danger);font-size:13px;min-height:18px}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);border:1px solid var(--ink);padding:12px 22px;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:all .25s ease}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.red{background:var(--danger);border-color:var(--danger);color:#fff}.btn.red:hover{background:transparent;color:var(--danger)}
+.btn.gray{background:#8f867d;border-color:#8f867d;color:#fff}.btn.gray:hover{background:transparent;color:#8f867d}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--cream)}
+header{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header .topbar{max-width:1280px;margin:0 auto;padding:0 28px;height:74px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:20px}
+header .brand{justify-self:start;color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:34px;letter-spacing:10px;text-transform:uppercase}
+header .brand small{display:inline-block;transform:translateY(-6px);font-size:14px;letter-spacing:2px;font-family:'Jost',sans-serif}
+header .actions{display:flex;align-items:center;justify-self:end;justify-content:flex-end;gap:18px}
+header .link{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink);position:relative;padding:4px 0}
+header .link::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--ink);transition:width .35s ease}
+header .link:hover::after{width:100%}
+main{max-width:1200px;margin:28px auto;padding:0 20px 36px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-bottom:22px}
+.stat{background:var(--panel);border:1px solid var(--line);padding:20px 18px;border-left:5px solid #b9a999;box-shadow:0 8px 18px var(--shadow)}
+.stat b{display:block;font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1}.stat small{color:var(--taupe);font-size:11px;letter-spacing:3px;text-transform:uppercase}
+.tools{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.tools input,.tools select{flex:1;min-width:180px;border:1px solid var(--line);background:var(--panel);padding:11px 12px;color:var(--ink);border-radius:10px;outline:none}
+.tools select{max-width:200px}
+.tw{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow-x:auto;box-shadow:0 8px 18px var(--shadow)}
+table{width:100%;border-collapse:collapse}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:#f1ebdf;font-size:11px;text-transform:uppercase;color:var(--taupe);letter-spacing:2px}
+tbody tr{cursor:pointer;transition:background .2s ease}
+tbody tr:hover{background:rgba(214,204,187,.18)}
+.tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid transparent}
+.New{background:#edf4fd;color:#244d7d;border-color:#dfe9f7}.InProgress{background:#fff4dc;color:#915d0a;border-color:#f1e0b5}.Quoted{background:#eaf7ef;color:#266b48;border-color:#d0e9d8}.Closed{background:#efefef;color:#4a4a4a;border-color:#e1e1e1}
+#modal{position:fixed;inset:0;background:rgba(17,17,17,.5);display:grid;place-items:center;padding:16px;z-index:40}
+#box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 24px;width:min(92vw,620px);max-height:92vh;overflow:auto;box-shadow:0 30px 60px rgba(17,17,17,.12)}
+#box h2{font-family:'Cormorant Garamond',serif;font-size:42px;letter-spacing:1px;margin-bottom:10px}
+#box label{display:block;margin-top:12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--taupe)}
+#box select,#box textarea{width:100%;margin-top:8px;border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:10px;color:var(--ink);outline:none}
+#box textarea{min-height:110px;resize:vertical}
+dl{display:grid;grid-template-columns:120px 1fr;gap:8px 12px;padding:8px 0}
+dt{color:var(--taupe);font-weight:600}dd{word-break:break-word}
+.acts{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap}.empty{padding:44px;text-align:center;color:var(--taupe);font-size:15px}
+@media (max-width:640px){header .topbar{grid-template-columns:1fr auto 1fr;padding:0 18px}header .brand{font-size:28px;letter-spacing:6px}.tools{display:grid}.tools select{max-width:none}}
+</style></head><body>
+<div id="login"><form id="lf"><div class="logo">FELIX</div><h1>Admin Portal</h1><input id="u" placeholder="Username" value="admin" autocomplete="username"><div class="pw-wrap"><input id="p" type="password" placeholder="Password" autocomplete="current-password"><button type="button" class="toggle-pw" id="pwToggle" aria-label="Show password" title="Show password"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div><button class="btn">Sign in</button><div id="err"></div></form></div>
+<div id="app" class="hide"><header><div class="topbar"><div class="brand">FELIX CORPORATION <small>ADMIN</small></div><div class="actions"><button class="btn gray" id="exp">Export CSV</button> <button class="btn gray" id="out">Logout</button></div></div></header>
+<main><div class="stats" id="stats"></div>
+<div class="tools"><input id="q" placeholder="Search name, company, email, product…"><select id="fs"><option value="">All statuses</option><option>New</option><option>In Progress</option><option>Quoted</option><option>Closed</option></select><button class="btn" id="rf">Refresh</button></div>
+<div class="tw"><table><thead><tr><th>#</th><th>Date</th><th>Name</th><th>Company</th><th>Product</th><th>Qty</th><th>Status</th></tr></thead><tbody id="tb"></tbody></table><div id="em" class="empty hide">No quote requests found.</div></div></main></div>
+<div id="modal" class="hide"><div id="box"></div></div>
+<script>
+let T=sessionStorage.getItem("t"),D=[];const $=i=>document.getElementById(i);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pw=$("p"),pwToggle=$("pwToggle");
+const eyeOpen='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+const eyeClosed='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path><circle cx="12" cy="12" r="3"></circle><path d="M4 4l16 16"></path></svg>';
+if(pw&&pwToggle){pwToggle.innerHTML=eyeOpen;pwToggle.addEventListener("click",()=>{const show=pw.type==="password";pw.type=show?"text":"password";pwToggle.innerHTML=show?eyeClosed:eyeOpen;pwToggle.setAttribute("aria-label",show?"Hide password":"Show password");pwToggle.setAttribute("title",show?"Hide password":"Show password");pw.focus();});}
+async function api(p,b){const r=await fetch(p,{method:b?"POST":"GET",headers:{"Content-Type":"application/json","X-Token":T||""},body:b?JSON.stringify(b):undefined});
+if(r.status==401&&p!="/api/login"){logout();throw 0}return r}
+function logout(){sessionStorage.removeItem("t");location.reload()}
+$("lf").onsubmit=async e=>{e.preventDefault();const r=await api("/api/login",{user:$("u").value,password:$("p").value});const j=await r.json();
+if(j.token){T=j.token;sessionStorage.setItem("t",T);start()}else $("err").textContent=j.error}
+$("out").onclick=logout;
+$("exp").onclick=async()=>{const b=await(await api("/api/export")).blob();const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="quotes.csv";a.click()};
+async function load(){D=await(await api("/api/quotes")).json();render()}
+function start(){$("login").classList.add("hide");$("app").classList.remove("hide");load();setInterval(load,15000)}
+function render(){const c=s=>D.filter(d=>d.status==s).length;
+$("stats").innerHTML=[["Total",D.length],["New",c("New")],["In Progress",c("In Progress")],["Quoted",c("Quoted")]].map(([a,b])=>`<div class="stat"><b>${b}</b><small>${a}</small></div>`).join("");
+const q=$("q").value.toLowerCase(),s=$("fs").value;
+const L=D.filter(d=>(!s||d.status==s)&&(!q||[d.name,d.company,d.email,d.product].join(" ").toLowerCase().includes(q)));
+$("em").classList.toggle("hide",L.length>0);
+$("tb").innerHTML=L.map(d=>`<tr data-id="${d.id}"><td>${d.id}</td><td>${esc(d.created_at.slice(0,16))}</td><td>${esc(d.name)}</td><td>${esc(d.company)}</td><td>${esc(d.product)}</td><td>${esc(d.quantity)}</td><td><span class="tag ${d.status.replace(" ","")}">${d.status}</span></td></tr>`).join("")}
+$("q").oninput=$("fs").onchange=render;$("rf").onclick=load;
+$("tb").onclick=e=>{const tr=e.target.closest("tr");if(!tr)return;const d=D.find(x=>x.id==tr.dataset.id);
+$("box").innerHTML=`<h2>Quote #${d.id}</h2><dl><dt>Name</dt><dd>${esc(d.name)}</dd><dt>Company</dt><dd>${esc(d.company)}</dd><dt>Email</dt><dd><a href="mailto:${esc(d.email)}">${esc(d.email)}</a></dd><dt>Phone</dt><dd>${esc(d.phone)}</dd><dt>Product</dt><dd>${esc(d.product)}</dd><dt>Quantity</dt><dd>${esc(d.quantity)}</dd><dt>Specs</dt><dd>${esc(d.specs)}</dd><dt>Message</dt><dd>${esc(d.message)}</dd><dt>Received</dt><dd>${esc(d.created_at)} UTC</dd></dl>
+<label>Status<select id="ms">${["New","In Progress","Quoted","Closed"].map(s=>`<option ${s==d.status?"selected":""}>${s}</option>`).join("")}</select></label>
+<label>Internal notes<textarea id="mn" rows="3">${esc(d.notes)}</textarea></label>
+<div class="acts"><button class="btn red" id="md">Delete</button><button class="btn gray" id="mc">Close</button><button class="btn" id="mv">Save</button></div>`;
+$("modal").classList.remove("hide");$("mc").onclick=()=>$("modal").classList.add("hide");
+$("mv").onclick=async()=>{await api("/api/update",{id:d.id,status:$("ms").value,notes:$("mn").value});$("modal").classList.add("hide");load()};
+$("md").onclick=async()=>{if(confirm("Delete this quote permanently?")){await api("/api/delete",{id:d.id});$("modal").classList.add("hide");load()}}};
+$("modal").onclick=e=>{if(e.target.id=="modal")$("modal").classList.add("hide")};
+if(T)start();
+</script></body></html>

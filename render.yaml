@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: felix-corporation-website
+    runtime: python
+    plan: free
+    buildCommand: python -m compileall -q website db.py
+    startCommand: python website/server.py
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: 0.0.0.0

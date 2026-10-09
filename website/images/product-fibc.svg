@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">FIBC jumbo bulk bag with four lifting loops</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e9e2d5"/><stop offset="1" stop-color="#c8bda9"/></linearGradient>
+    <linearGradient id="bag" x2="0" y2="1"><stop stop-color="#f3eee4"/><stop offset="1" stop-color="#c9bea9"/></linearGradient>
+    <pattern id="weave" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 4h18M0 13h18" stroke="#8e836f" stroke-opacity=".3" stroke-width="2"/><path d="M4 0v18M13 0v18" stroke="#fff" stroke-opacity=".5" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 790h800v210H0z" fill="#b1a58f"/>
+  <path d="M0 830h800M0 885h800M0 940h800" stroke="#887c68" stroke-opacity=".32" stroke-width="4"/>
+  <ellipse cx="400" cy="814" rx="232" ry="38" fill="#736a5b" opacity=".22"/>
+  <path d="M257 270v-88q0-43 42-43h28v132M470 270v-88q0-43 42-43h28v132" fill="none" stroke="#9d907a" stroke-width="28" stroke-linecap="round"/>
+  <path d="M257 260v-78q0-25 25-25h36M470 260v-78q0-25 25-25h36" fill="none" stroke="#eee8dc" stroke-width="10" stroke-linecap="round"/>
+  <path d="M232 250h336l-20 526q-2 40-42 40H294q-40 0-42-40z" fill="url(#bag)" stroke="#857965" stroke-width="7"/>
+  <path d="M232 250h336l-20 526q-2 40-42 40H294q-40 0-42-40z" fill="url(#weave)" opacity=".68"/>
+  <path d="M238 287h324M235 310h321" stroke="#a69881" stroke-width="7"/>
+  <path d="M255 751q146 44 290 0" fill="none" stroke="#a3957e" stroke-width="7"/>
+  <path d="M296 390h208" stroke="#a3957e" stroke-width="3" opacity=".65"/>
+  <path d="M296 414h208" stroke="#a3957e" stroke-width="3" opacity=".65"/>
+  <path d="M300 455h200v104H300z" fill="#eee8dc" opacity=".86"/>
+  <path d="M325 480h150M325 500h150M325 520h110" stroke="#8b806d" stroke-width="5" opacity=".7"/>
+  <path d="M180 870h440l-34 44H214z" fill="#746957"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Custom branded white bulk bag with printed label</title>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e7e1d6"/><stop offset="1" stop-color="#c6beb1"/></linearGradient>
+    <linearGradient id="bag" x2="0" y2="1"><stop stop-color="#fbf9f4"/><stop offset="1" stop-color="#d5d0c5"/></linearGradient>
+    <pattern id="woven" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M0 4h16M0 12h16" stroke="#a29b8e" stroke-opacity=".25" stroke-width="2"/><path d="M4 0v16M12 0v16" stroke="#fff" stroke-opacity=".72" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 812h800v188H0z" fill="#aaa293"/>
+  <path d="M0 864h800M0 927h800" stroke="#716b60" stroke-opacity=".27" stroke-width="4"/>
+  <ellipse cx="398" cy="825" rx="240" ry="35" fill="#514d45" opacity=".18"/>
+  <path d="M260 263v-89q0-40 39-40h23v129M478 263v-89q0-40 39-40h23v129" fill="none" stroke="#9e9586" stroke-width="26" stroke-linecap="round"/>
+  <path d="M236 251h328l-16 524q-2 39-40 39H292q-38 0-40-39z" fill="url(#bag)" stroke="#8c8374" stroke-width="7"/>
+  <path d="M236 251h328l-16 524q-2 39-40 39H292q-38 0-40-39z" fill="url(#woven)"/>
+  <path d="M243 286h316M256 749q140 42 276 0" fill="none" stroke="#aaa08f" stroke-width="6"/>
+  <path d="M291 392h220v179H291z" fill="#e7e3da" stroke="#8a8274" stroke-width="4"/>
+  <path d="M317 433h168" stroke="#536773" stroke-width="9"/>
+  <path d="M318 457h144" stroke="#8d806c" stroke-width="5"/>
+  <path d="M318 480h158M318 503h136" stroke="#9c9384" stroke-width="4"/>
+  <circle cx="400" cy="537" r="18" fill="#78877e"/>
+  <path d="M362 540q38-40 76 0" fill="none" stroke="#78877e" stroke-width="5"/>
+  <path d="M185 866h430l-33 43H218z" fill="#756d5f"/>
+</svg>

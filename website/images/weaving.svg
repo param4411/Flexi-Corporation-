@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title">
+  <title id="title">Polypropylene tape weaving into industrial fabric</title>
+  <rect width="800" height="600" fill="#d6ccbb"/>
+  <path d="M0 420h800v180H0z" fill="#b8aa94"/>
+  <path d="M0 450h800M0 486h800M0 522h800M0 558h800" stroke="#857966" stroke-width="3" opacity=".55"/>
+  <rect x="102" y="96" width="536" height="330" rx="18" fill="#292722"/>
+  <rect x="129" y="125" width="482" height="272" rx="8" fill="#eee8dd"/>
+  <path d="M148 160h444M148 187h444M148 214h444M148 241h444M148 268h444M148 295h444M148 322h444M148 349h444M148 376h444" stroke="#998c76" stroke-width="9"/>
+  <path d="M166 143v239M194 143v239M222 143v239M250 143v239M278 143v239M306 143v239M334 143v239M362 143v239M390 143v239M418 143v239M446 143v239M474 143v239M502 143v239M530 143v239M558 143v239M586 143v239" stroke="#b1a48f" stroke-width="7"/>
+  <path d="M130 126h480M130 396h480" stroke="#5e564a" stroke-width="13"/>
+  <circle cx="154" cy="420" r="29" fill="#756b5b"/><circle cx="586" cy="420" r="29" fill="#756b5b"/>
+  <path d="M93 470h614l-35 34H128z" fill="#817663"/>
+  <path d="M225 80h350" stroke="#f6f3ee" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="220" cy="80" r="13" fill="#f6f3ee"/><circle cx="580" cy="80" r="13" fill="#f6f3ee"/>
+</svg>
